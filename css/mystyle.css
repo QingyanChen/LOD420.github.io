@@ -10,4 +10,6 @@
 #pie{
 	clear:both;
 	text-align:center;
+	padding: 20px;
+	border-top:2px solid #999999;
 }
