@@ -21,7 +21,30 @@
 	font-size:1em;
 }
 
-#lateral{
+.arriba{
+	float:top;
+	width:220px;
+	margin:20px 0px;
+	padding:20px;
+	background:#CCCCCC;
+}
+
+.abajo{
+	float:both;
+	width:220px;
+	margin:20px 0px;
+	padding:20px;
+	background:#CCCCCC;
+}
+
+.medio{
+	width:220px;
+	margin:20px 0px;
+	padding:20px;
+	background-color:#CCCCCC;
+}
+
+.left{
 	float:left;
 	width:220px;
 	margin:20px 0px;
@@ -29,7 +52,7 @@
 	background:#CCCCCC;
 }
 
-#pie{
+.pie{
 	clear:both;
 	text-align:center;
 	padding: 20px;
