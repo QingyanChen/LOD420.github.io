@@ -23,7 +23,7 @@
 
 .izquierda{
 	float:left;
-	width:200px;
+	width:25%;
 	margin:20px 0px;
 	padding:20px;
 	background-color:khaki;
@@ -31,7 +31,7 @@
 
 .abajo{
 	float:both;
-	width:200px;
+	width:25%;
 	margin:20px 0px;
 	padding:20px;
 	background:#CCCCCC;
@@ -39,7 +39,7 @@
 
 .medio{
 	float:left;
-	width:200px;
+	width:25%;
 	margin:20px 0px;
 	padding:20px;
 	background-color:#CCCCCC;
@@ -47,7 +47,7 @@
 
 .derecha{
 	float:rigth;
-	width:100px;
+	width:25%;
 	margin:20px 0px;
 	padding:20px;
 	background:#CCCCCC;
