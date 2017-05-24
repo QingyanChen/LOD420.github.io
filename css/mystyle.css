@@ -4,14 +4,9 @@
 	padding:0px;
 }
 
-#pie{
-	clear:both;
-	text-align:center;
-	padding: 20px;
-}
-
 .w3-kaushan {
   font-family: "Kaushan Script", cursive;
+  text-align:center;
 }
 
 .cgeneral{
