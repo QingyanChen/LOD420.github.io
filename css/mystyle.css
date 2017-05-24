@@ -4,12 +4,15 @@
 	padding:0px;
 }
 
+#pie{
+	clear:both;
+	text-align:center;
+	padding: 20px;
+}
+
 .w3-kaushan {
   font-family: "Kaushan Script", cursive;
 }
-
-.w3-allerta {
-  font-family: "Allerta Stencil", Sans-serif;
 
 .cgeneral{
 	color:cyan;
@@ -19,8 +22,3 @@
 	font-size:1em;
 }
 
-#pie{
-	clear:both;
-	text-align:center;
-	padding: 20px;
-}
