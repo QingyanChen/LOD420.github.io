@@ -21,7 +21,7 @@
 	font-size:1em;
 }
 
-.arriba{
+.izquierda{
 	float:top;
 	width:220px;
 	margin:20px 0px;
@@ -38,15 +38,15 @@
 }
 
 .medio{
-	width:220px;
+	width:440px;
 	margin:20px 0px;
 	padding:20px;
 	background-color:#CCCCCC;
 }
 
-.left{
+.derecha{
 	float:left;
-	width:220px;
+	width:800px;
 	margin:20px 0px;
 	padding:20px;
 	background:#CCCCCC;
