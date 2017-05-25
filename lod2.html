@@ -68,17 +68,17 @@
 			style="width: 130px">
 			<h5 class="w3-bar-item">Protocolos</h5>
 			<button class="w3-bar-item w3-button tablink"
-				onclick="openCity(event, 'OSPF')">OSPF</button>
+				onclick="openProtocolo(event, 'OSPF')">OSPF</button>
 			<button class="w3-bar-item w3-button tablink"
-				onclick="openCity(event, 'RIP')">RIP</button>
+				onclick="openProtocolo(event, 'RIP')">RIP</button>
 			<button class="w3-bar-item w3-button tablink"
-				onclick="openCity(event, 'EIGRP')">EIGRP</button>
+				onclick="openProtocolo(event, 'EIGRP')">EIGRP</button>
 		</div>
 
 		<div style="margin-left: 130px">
 
 
-			<div id="OSPF" class="w3-container city" style="display: none">
+			<div id="OSPF" class="w3-container protocolo" style="display: yes">
 				<h2>OSPF</h2>
 				<p>Open Shortest Path First (OSPF), Primer Camino Más Corto, es
 					un protocolo de red para encaminamiento jerárquico de pasarela
@@ -124,7 +124,7 @@
 
 			</div>
 
-			<div id="RIP" class="w3-container city" style="display: none">
+			<div id="RIP" class="w3-container protocolo" style="display: none">
 				<h2>RIP</h2>
 				<p>El Protocolo de Información de Encaminamiento, Routing
 					Information Protocol (RIP), es un protocolo de puerta de enlace
@@ -143,7 +143,7 @@
 
 			</div>
 
-			<div id="EIGRP" class="w3-container city" style="display: none">
+			<div id="EIGRP" class="w3-container protocolo" style="display: none">
 				<h2>EIGRP</h2>
 				<p>EIGRP (Protocolo de Enrutamiento de Puerta de enlace Interior
 					Mejorado en español) es un protocolo de encaminamiento vector
@@ -185,7 +185,7 @@
 	</footer>
 
 	<script>
-		function openCity(evt, cityName) {
+		function openProtocolo(evt, protocoloName) {
 			var i, x, tablinks;
 			x = document.getElementsByClassName("city");
 			for (i = 0; i < x.length; i++) {
@@ -196,7 +196,7 @@
 				tablinks[i].className = tablinks[i].className.replace(
 						" w3-black", "");
 			}
-			document.getElementById(cityName).style.display = "block";
+			document.getElementById(protocoloName).style.display = "block";
 			evt.currentTarget.className += " w3-black";
 		}
 		
