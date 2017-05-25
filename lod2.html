@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Leonardo Díaz Briones">
+<meta name="keywords" content="HTML5, CSS3, JavaScript">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- reference -->
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" href="iconweb/style.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="fonts/KaushanScript-Regular.ttf">
+<link rel="stylesheet" href="fonts/AllertaStencil-Regular.ttf">
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="icon-leng/flaticon.css">
+
+<!-- icons -->
+<link rel="shortcut icon" href="img/logo.ico">
+<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+<title>REDES</title>
+</head>
+<body>
+	<header>
+		<div class="w3-container w3-padding-small w3-black">
+			<div class="w3-right">
+				<i class="icon-volume_up"></i> <i class="icon-wifi"></i> <i
+					class="icon-bluetooth"></i> <i
+					class="icon-battery_charging_full"></i>
+			</div>
+		</div>
+		<div class="w3-sidebar w3-bar-block w3-border-right"
+			style="display: none" id="mySidebar">
+			<button onclick="w3_close()" class="w3-bar-item w3-large">Close
+				&times;</button>
+			<a href="index.html" class="w3-bar-item w3-button"><span
+				class="icon-home"></span> Home</a> <a href="lod1.html"
+				class="w3-bar-item w3-button">ING WEB</a> <a href="#"
+				class="w3-bar-item w3-button">T&Oacute;PICOS</a>
+		</div>
+	</header>
+
+	<div class="w3-container w3-cyan w3-kaushan">
+		<button class="w3-button w3-cyan w3-xlarge" onclick="w3_open()">☰</button>
+		<h1>ADMINISTRACIÓN DE REDES</h1>
+	</div>
+
+	<div class="w3-container w3-black w3-center w3-kaushan">
+		<div class="container">
+			<div class="alert alert-success">
+				<strong>¡¡¡¡¡BIENVENIDO!!!!!</strong>
+			</div>
+		</div>
+
+
+		<h3 class=w3-kaushan>CURSO: REDES</h3>
+		<h2 class=w3-kaushan>DOCENTE: ING. CARLOS KOO</h2>
+
+		<p class=w3-kauhsan>CONTENIDO</p>
+
+		<div class="w3-sidebar w3-bar-block w3-cyan w3-card-2"
+			style="width: 130px">
+			<h5 class="w3-bar-item">Protocolos</h5>
+			<button class="w3-bar-item w3-button tablink"
+				onclick="openCity(event, 'OSPF')">OSPF</button>
+			<button class="w3-bar-item w3-button tablink"
+				onclick="openCity(event, 'RIP')">RIP</button>
+			<button class="w3-bar-item w3-button tablink"
+				onclick="openCity(event, 'EIGRP')">EIGRP</button>
+		</div>
+
+		<div style="margin-left: 130px">
+
+
+			<div id="OSPF" class="w3-container city" style="display: none">
+				<h2>OSPF</h2>
+				<p>Open Shortest Path First (OSPF), Primer Camino Más Corto, es
+					un protocolo de red para encaminamiento jerárquico de pasarela
+					interior o Interior Gateway Protocol (IGP), que usa el algoritmo
+					SmoothWall Dijkstra enlace-estado (Link State Advertisement, LSA)
+					para calcular la ruta idónea entre dos nodos cualesquiera de un
+					sistema autónomo.</p>
+				<p>Su medida de métrica se denomina cost, y tiene en cuenta
+					diversos parámetros tales como el ancho de banda y la congestión de
+					los enlaces. OSPF construye además una base de datos enlace-estado
+					(Link-State Database, LSDB) idéntica en todos los routers de la
+					zona.</p>
+				<p>OSPF puede operar con seguridad usando MD5 para autenticar
+					sus puntos antes de realizar nuevas rutas y antes de aceptar avisos
+					de enlace-estado. OSPF es probablemente el protocolo IGP más
+					utilizado en redes grandes; IS-IS, otro protocolo de encaminamiento
+					dinámico de enlace-estado, es más común en grandes proveedores de
+					servicios. Como sucesor natural de RIP, acepta VLSM y CIDR desde su
+					inicio. A lo largo del tiempo, se han ido creando nuevas versiones,
+					como OSPFv3 que soporta IPv6 o las extensiones multidifusión para
+					OSPF (MOSPF), aunque no están demasiado extendidas. OSPF puede
+					"etiquetar" rutas y propagar esas etiquetas por otras rutas. Una
+					red OSPF se puede descomponer en regiones (áreas) más pequeñas. Hay
+					un área especial llamada área backbone que forma la parte central
+					de la red a la que se encuentran conectadas el resto de áreas de la
+					misma. Las rutas entre las diferentes áreas circulan siempre por el
+					backbone, por lo tanto todas las áreas deben conectar con el
+					backbone. Si no es posible hacer una conexión directa con el
+					backbone, se puede hacer un enlace virtual entre redes. Los routers
+					(también conocidos como encaminadores) en el mismo dominio de
+					multidifusión o en el extremo de un enlace punto-a-punto forman
+					enlaces cuando se descubren los unos a los otros. En un segmento de
+					red Ethernet los routers eligen a un router designado (Designated
+					Router, DR) y un router designado secundario o de copia (Backup
+					Designated Router, BDR) que actúan como hubs para reducir el
+					tráfico entre los diferentes routers. OSPF puede usar tanto
+					multidifusiones (multicast) como unidifusiones (unicast) para
+					enviar paquetes de bienvenida y actualizaciones de enlace-estado.
+					Las direcciones de multidifusión usadas son 224.0.0.5 y 224.0.0.6.
+					Al contrario que RIP o BGP, OSPF no usa ni TCP ni UDP, sino que se
+					encapsula directamente sobre el protocolo IP poniendo "89" en el
+					campo protocolo.</p>
+
+			</div>
+
+			<div id="RIP" class="w3-container city" style="display: none">
+				<h2>RIP</h2>
+				<p>El Protocolo de Información de Encaminamiento, Routing
+					Information Protocol (RIP), es un protocolo de puerta de enlace
+					interna o interior (Interior Gateway Protocol, IGP) utilizado por
+					los routers o encaminadores para intercambiar información acerca de
+					redes del Internet Protocol (IP) a las que se encuentran
+					conectados. Su algoritmo de encaminamiento está basado en el vector
+					de distancia, ya que calcula la métrica o ruta más corta posible
+					hasta el destino a partir del número de "saltos" o equipos
+					intermedios que los paquetes IP deben atravesar. El límite máximo
+					de saltos en RIP es de 15, de forma que al llegar a 16 se considera
+					una ruta como inalcanzable o no deseable. A diferencia de otros
+					protocolos, RIP es un protocolo libre es decir que puede ser usado
+					por diferentes routers y no únicamente por un solo propietario con
+					uno como es el caso de EIGRP que es de Cisco Systems.</p>
+
+			</div>
+
+			<div id="EIGRP" class="w3-container city" style="display: none">
+				<h2>EIGRP</h2>
+				<p>EIGRP (Protocolo de Enrutamiento de Puerta de enlace Interior
+					Mejorado en español) es un protocolo de encaminamiento vector
+					distancia avanzado, propiedad de Cisco Systems, que ofrece lo mejor
+					de los algoritmos de vector de distancias y del estado de enlace.
+					Se considera un protocolo avanzado que se basa en las
+					características normalmente asociadas con los protocolos del estado
+					de enlace. Algunas de las mejores funciones de OSPF, como las
+					actualizaciones parciales y la detección de vecinos, se usan de
+					forma similar con EIGRP. Aunque no garantiza el uso de la mejor
+					ruta, es bastante usado porque EIGRP es algo más fácil de
+					configurar que OSPF. EIGRP mejora las propiedades de convergencia y
+					opera con mayor eficiencia que IGRP. Esto permite que una red tenga
+					una arquitectura mejorada y pueda mantener las inversiones actuales
+					en IGRP. EIGRP al igual que IGRP usa el siguiente cálculo de
+					métrica: Métrica= [K1 * ancho de banda + ((K2 * ancho de
+					banda)/(256-carga))+ (K3 * retardo)]*[K5/(confiabilidad + K4)].
+					(Nota: Debido a que EIGRP utiliza un campo de métrica de 32 bits, a
+					diferencia de IGRP que es de 24, multiplica este valor por 256).
+					Los valores por defecto de las constantes son : K1=1, K2=0, K3=1,
+					K4=0, K5=0. Cuando K4 y K5 son 0, la porción
+					[K5/(confiabilidad+K4)] de la ecuación no forman parte del cálculo
+					de la métrica. Por lo tanto, utilizando los valores por defecto de
+					las constantes, la ecuación de la métrica es: Ancho de
+					banda+retardo.</p>
+
+			</div>
+
+		</div>
+
+		<div>
+			<p class="icon-apps cgeneral"></p>
+		</div>
+	</div>
+	<footer class="pie">
+		<h5 class="w3-kaushan">
+			<strong>Derechos Reservados &copy;</strong>
+		</h5>
+	</footer>
+
+	<script>
+		function openCity(evt, cityName) {
+			var i, x, tablinks;
+			x = document.getElementsByClassName("city");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < x.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(
+						" w3-black", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " w3-black";
+		}
+	</script>
+</body>
+</html>
