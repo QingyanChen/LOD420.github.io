@@ -53,6 +53,13 @@
 	background:#CCCCCC;
 }
 
+.social{
+	float:rigth;
+	width:20%;
+	background:#black;
+	position: fixed;
+}
+
 .pie{
 	clear:both;
 	text-align:center;
