@@ -20,33 +20,50 @@
 </head>
 <body>
 
-<div class="w3-container w3-padding-small w3-black">
+<header>
+	<div class="w3-container w3-padding-small w3-black">
 			<div class="w3-right">
 				<i class="icon-volume_up"></i> <i class="icon-wifi"></i> <i
 					class="icon-bluetooth"></i> <i
 					class="icon-battery_charging_full"></i>
 			</div>
 		</div>
+		<div class="w3-sidebar w3-bar-block w3-border-right"
+			style="display: none" id="mySidebar">
+			<button onclick="w3_close()" class="w3-bar-item w3-large">Close
+				&times;</button>
+			<a href="index.html" class="w3-bar-item w3-button"><span
+				class="icon-home"></span> Home</a> <a href="lod1.html"
+				class="w3-bar-item w3-button">ING WEB</a> <a href="lod2.html"
+				class="w3-bar-item w3-button">REDES</a>
+				<a href="lod3.html"
+				class="w3-bar-item w3-button">T&Oacute;PICOS</a>
+		</div>
+	</header>
 
-<div class="w3-container w3-cyan w3-center w3-animate-top">
+<div class="w3-container w3-lime w3-center w3-animate-top">
 			<h1 class="w3-kaushan">
-				<span class="icon-add_location"></span> Turismo<span
-					class="icon-language zoom"></span>
+				<span class="icon-add_location"></span> Turismo
 			</h1>
 		</div>
 		
 <div class="w3-container">
 
-<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-cyan w3-left-align">Baños del Inca</button>
-<div id="Demo1" class="w3-hide w3-container">
-    <p>A 15 minutos de Cajamarca se encuentra Baños del Inca, un distrito que ofrece excelentes servicios del termalismo medicinal, combinando modernismo con cultura incaica, pero, sobre todo, salud de calidad.</p>
-    <p>Sumergirse en las aguas termales, especialmente en la famosa Poza del Inca, que mide cuatro metros de largo por cuatro de ancho y tiene una profundidad de un metro con setenta centímetros, es francamente delicioso. Según la tradición, el inca Atahualpa tenía la costumbre de relajarse en sus aguas, para recuperar fuerzas antes de emprender nuevas jornadas de conquista.</p>
 
-</div>
-
-<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-black w3-left-align">Fotos</button>
-<div id="Demo2" class="w3-hide w3-container">
-    <div class="container">  
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openLugares(event,'Baños del Inca')">Baños del Inca</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openLugares(event,'Cumbe Mayo')">Cumbe Mayo</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openLugares(event,'Otuzco')">Otuzco</button>
+  </div>
+  
+  <div id="Baños del Inca" class="w3-container w3-border lugares">
+    <h2>Baños del Inca</h2>
+    <p>A 15 minutos de Cajamarca se encuentra Baños del Inca, un distrito que ofrece excelentes servicios del termalismo medicinal, combinando modernismo con cultura incaica, pero, sobre todo, salud de calidad.
+    Sumergirse en las aguas termales, especialmente en la famosa Poza del Inca, que mide cuatro metros de largo por cuatro de ancho y tiene una profundidad de un metro con setenta centímetros, es francamente delicioso. Según la tradición, el inca Atahualpa tenía la costumbre de relajarse en sus aguas, para recuperar fuerzas antes de emprender nuevas jornadas de conquista.</p>
+    
+    
+    <div class="container">
+  <h2>Carousel Example</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -58,15 +75,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="img/BañosInca.jpg" alt="Foto Baños del Inca" style="width:100%;">
+        <img src="img/BañosInca.jpg" alt="Baños del Inca" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="img/BañosInca2.jpg" alt="Foto Baños del Inca" style="width:100%;">
+        <img src="img/BañosInca2.jpg" alt="Baños del Inca" style="width:100%;">
       </div>
-      
+    
       <div class="item">
-        <img src="img/BañosInca3.jpg" alt="Foto Baños del Inca" style="width:100%;">
+        <img src="img/BañosInca3.jpg" alt="Baños del Inca" style="width:100%;">
       </div>
     </div>
 
@@ -81,10 +98,125 @@
     </a>
   </div>
 </div>
+    
+    
+  </div>
+
+  <div id="Cumbe Mayo" class="w3-container w3-border lugares" style="display:none">
+    <h2>Cumbe Mayo</h2>
+    <p>Esta ubicado 20 Km. al suroeste de Cajamarca y a una altitud de 3500 metros sobre el nivel del mar. Se trata de una zona arqueológica rodeada de un pintoresco paisaje que alberga numerosas formaciones geológicas en forma de bosque de piedras o farallones, siendo las formas más conocidas las que semejan siluetas de frailes en silenciosa procesión, razón por la cual estas formaciones rocosas han adquirido el apelativo de “fraylones”. </p> 
+    
+     <div class="container">
+  <h2>Carousel Example</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="ny.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    
+    
+    
+  </div>
+
+  <div id="Otuzco" class="w3-container w3-border lugares" style="display:none">
+    <h2>Otuzco</h2>
+    <p>La Provincia de Otuzco es una de las doce provincias que conforman el Departamento de La Libertad, bajo la administración del Gobierno regional de La Libertad, en el Perú. Limita por el norte con la Provincia de Gran Chimú; por el este con el Departamento de Cajamarca y la Provincia de Sánchez Carrión; por el sur con la Provincia de Santiago de Chuco y la Provincia de Julcán; y, por el oeste con la Provincia de Ascope y la provincia de Trujillo.</p>
+    
+    
+     <div class="container">
+  <h2>Carousel Example</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="ny.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    
+    
+  </div>
 </div>
 
-</div>
+<script>
+
+function openLugares(evt, lugaresName) {
+	  var i, x, tablinks;
+	  x = document.getElementsByClassName("lugares");
+	  for (i = 0; i < x.length; i++) {
+	      x[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablink");
+	  for (i = 0; i < x.length; i++) {
+	      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+	  }
+	  document.getElementById(lugaresName).style.display = "block";
+	  evt.currentTarget.className += " w3-red";
+	}
 
 
+function w3_open() {
+	document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+	document.getElementById("mySidebar").style.display = "none";
+}
+
+</script>
 </body>
 </html>
