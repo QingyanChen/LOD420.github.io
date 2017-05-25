@@ -21,40 +21,7 @@
 	font-size:1em;
 }
 
-.izquierda{
-	float:left;
-	width:25%;
-	margin:20px 0px;
-	padding:20px;
-	background-color:khaki;
-}
-
-.abajo{
-	float:both;
-	width:25%;
-	margin:20px 0px;
-	padding:20px;
-	background:#CCCCCC;
-}
-
-.medio{
-	float:left;
-	width:25%;
-	margin:20px 0px;
-	padding:20px;
-	background-color:#CCCCCC;
-}
-
-.derecha{
-	float:rigth;
-	width:25%;
-	margin:20px 0px;
-	padding:20px;
-	background:#CCCCCC;
-}
-
 .social{
-	float:rigth;
 	width:1%;
 	position: fixed;
 }
