@@ -26,9 +26,7 @@
 
 	<header>
 		<div class="w3-container w3-padding-small w3-black">
-			<div class="w3-right">
-				
-			</div>
+			<div class="w3-right"></div>
 		</div>
 	</header>
 
@@ -40,13 +38,13 @@
 
 	<div class="w3-container w3-center">
 
-<div class="social">
-		<a href="https://www.facebook.com" target="blank"><img
-			src="img/fb.png" alt="facebook"></a>
-			<a href="https://www.tiwtter.com" target="blank"><img
-			src="img/ttw.png" alt="tiwtter"></a>
-			
-	</div>
+		<div class="social">
+			<a href="https://www.facebook.com" target="blank"><img
+				src="img/fb.png" alt="facebook"></a> <a
+				href="https://www.tiwtter.com" target="blank"><img
+				src="img/ttw.png" alt="tiwtter"></a>
+
+		</div>
 		<div class="w3-bar w3-black">
 			<button class="w3-bar-item w3-button tablink w3-green"
 				onclick="openLugares(event,'Baños del Inca')">
@@ -78,9 +76,13 @@
 				antes de emprender nuevas jornadas de conquista.</p>
 
 
-			<div class="container">
-				<h4><span class="icon-camera"></span> FOTOS</h4>
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div class="container w3-row">
+				<h4>
+					<span class="icon-camera"></span> FOTOS
+				</h4>
+				<div class="w3-third"></div>
+				<div id="myCarousel" class="carousel slide w3-third"
+					data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -117,6 +119,7 @@
 						class="sr-only">Next</span>
 					</a>
 				</div>
+				<div class="w3-third"></div>
 			</div>
 
 
@@ -135,9 +138,13 @@
 				en silenciosa procesión, razón por la cual estas formaciones rocosas
 				han adquirido el apelativo de “fraylones”.</p>
 
-			<div class="container">
-				<h4><span class="icon-camera"></span> FOTOS</h4>
-				<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+			<div class="container w3-row">
+				<h4>
+					<span class="icon-camera"></span> FOTOS
+				</h4>
+				<div class="w3-third"></div>
+				<div id="myCarousel1" class="carousel slide w3-third"
+					data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
 						<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
@@ -174,6 +181,7 @@
 						class="sr-only">Next</span>
 					</a>
 				</div>
+				<div class="w3-third"></div>
 			</div>
 
 		</div>
@@ -192,9 +200,13 @@
 				metros.</p>
 
 
-			<div class="container">
-				<h4><span class="icon-camera"></span> FOTOS</h4>
-				<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+			<div class="container w3-row">
+				<h4>
+					<span class="icon-camera"></span> FOTOS
+				</h4>
+				<div class="w3-third"></div>
+				<div id="myCarousel2" class="carousel slide w3-third"
+					data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
 						<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
@@ -228,12 +240,17 @@
 						class="sr-only">Next</span>
 					</a>
 				</div>
+				<div class="w3-third"></div>
 			</div>
 
 
 		</div>
 	</div>
-
+	<footer class="pie">
+		<h5 class="w3-kaushan">
+			<strong>Derechos Reservados &copy;</strong>
+		</h5>
+	</footer>
 	<script>
 		function openLugares(evt, lugaresName) {
 			var i, x, tablinks;
@@ -249,8 +266,6 @@
 			document.getElementById(lugaresName).style.display = "block";
 			evt.currentTarget.className += " w3-green";
 		}
-
-		
 	</script>
 </body>
 </html>
