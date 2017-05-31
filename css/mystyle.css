@@ -13,6 +13,12 @@
   font-family: "Allerta Stencil", Sans-serif;
 }
 
+a{ 
+color:#336699; 
+} 
+a:hover{ 
+color:#336670; 
+} 
 
 .zoom{
 	font-size:1em;
