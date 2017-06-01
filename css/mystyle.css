@@ -44,8 +44,8 @@ color:#336670;
 
 #position {
   	top: 50%; 
-    height: 135px; 
-    width: 300px;
+    height: 60px; 
+    width: 120px;
     left: 50%;
     margin-top: -68px;
     margin-left: -150px;
@@ -53,20 +53,8 @@ color:#336670;
     position: absolute; 
 	}
 
-#back {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%; 
-    opacity: 0.25;
-    width: 200px;
-    height: 200px;
-    margin-top: -100px;
-    margin-left: -100px;
-    z-index: -1;
-    border-radius: 100%;
-    background: #111;
-  }
+
+
 
 #controller {
 	display: block;
