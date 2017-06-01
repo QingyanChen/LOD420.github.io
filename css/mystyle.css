@@ -5,6 +5,233 @@
 	padding:0px;
 }
 
+$bg: #D64541;
+$black1: #222;
+$black2: #111;
+$red: #D64541;
+$blue: #4183D7;
+$green: #26A65B;
+$yellow: #F4D03F;
+$grey: #bdc3c7;
+$white: #e8e8e9; 
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+	position: fixed;   
+	top: 0; 
+	left: 0; 
+	height: 100%; 
+	width: 100%; 
+	display: block; 
+	background: $bg;
+	> div {
+  	top: 50%; 
+    height: 135px; 
+    width: 300px;
+    left: 50%;
+    margin-top: -68px;
+    margin-left: -150px;
+    display: block;
+    position: absolute; 
+	}
+	> div:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    opacity: 0.25;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    z-index: -1;
+    border-radius: 100%;
+    background: $black1;
+  }
+}
+
+#controller {
+	display: block;
+	position: absolute; 
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0; 
+}
+     
+#controller:before {
+	content: '';
+	display: block;
+	position: absolute; 
+	top: 0%;
+	left: 20%;
+	right: 20%;
+	bottom: 50%; 
+	border-top: 3px solid $black1;
+	background: $white;
+	z-index: 2;
+}
+     
+#controller:after {
+	content: '';
+	display: block;
+	position: absolute; 
+	top: 50%;
+	left: 36.5%;
+	right: 36.5%;
+	bottom: 15%; 
+	border-bottom: 3px solid $black1;
+  background: $white;  
+	z-index: 2;
+}
+     
+#leftCircle {
+	content: '';
+	display: block;
+	position: absolute; 
+	top: 0%;
+	left: 0%;
+	right: 57%;
+	bottom: 0%; 
+	border: 3px solid $black1;
+	border-radius: 100%;
+	background: $white; 
+}
+     
+#rightCircle {
+	content: '';
+	display: block;
+	position: absolute; 
+	top: 0%;
+	left: 57%;
+	right: 0%;
+	bottom: 0%; 
+	border: 3px solid $black1;
+	border-radius: 100%;
+	background: $white; 
+}
+     
+#leftCircle:after,     
+#rightCircle:after {
+	content: '';
+	display: block;
+	position: absolute; 
+	top: 15%;
+	left: 15%;
+	right: 15%;
+	bottom: 15%; 
+	border: 1px solid $grey;
+	border-radius: 100%;
+	z-index: 8;
+}
+      
+#rightCircle:after {
+	content: '';
+	display: block;
+	position: absolute; 
+	top: 8%;
+	left: 8%;
+	right: 8%;
+	bottom: 8%;  
+	border-radius: 100%;
+	background: $grey; 
+}
+
+.x:after,
+.x:before {
+	background: $black1;
+	content: '';
+	display: block;
+	position: absolute; 
+	top: 43%;
+	left: 27%;
+	right: 27%;
+	bottom: 43%;  
+	border-radius: 5px;
+	z-index: 9;
+}
+
+.x:before {
+	transform: rotate(90deg);
+}
+
+.btn {
+	background: $white; 
+	display: block;
+	position: absolute; 
+	top: 39%;
+	left: 25%;
+	right: 25%;
+	bottom: 39%;  
+	transform: rotate(-30deg);
+	border-radius: 10px;
+	z-index: 9;
+}
+
+.btn:before { 
+	display: block;
+	position: absolute; 
+	top: 15%;
+	left: 57%;
+	right: 12%;
+	bottom: 15%; 
+	border: 2px solid rgba(0,0,0,0.15);
+	border-radius: 100%;
+	z-index: 3;
+	content: '';
+}
+
+.btn:after {
+	background: red; 
+	display: block;
+	position: absolute; 
+	top: 15%;
+	left: 12%;
+	right: 57%;
+	bottom: 15%; 
+	border: 2px solid rgba(0,0,0,0.15); 
+	border-radius: 100%;
+	z-index: 3;
+	content: '';
+}
+
+#yx { transform: translateX(-20%) translateY(-50%) rotate(-30deg); }
+#ba { transform: translateX(20%) translateY(50%) rotate(-30deg); }
+
+#yx:before { background: $blue; }
+#yx:after { background: $green; }
+#ba:before { background: $red; }
+#ba:after { background: $yellow; }
+
+#selectstart:before,
+#selectstart:after {
+	content: '';
+	display: block;
+	position: absolute;
+	background: $black1; 
+	border-radius: 5px; 
+	top: 56%;
+	left: 46%;
+	right: 45%;
+	bottom: 37%;
+	z-index: 10;
+}
+  
+#selectstart:before {   
+	transform: translateX(-80%) rotate(-30deg);
+} 
+ 
+#selectstart:after {  
+	transform: translateX(25%) rotate(-30deg);
+}
+
+
+
+
+
 .w3-kaushan {
   font-family: "Kaushan Script", cursive;
 }
