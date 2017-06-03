@@ -7,17 +7,83 @@
 
 .w3-kaushan {
   font-family: "Kaushan Script", cursive;
+
 }
 
 .w3-allerta {
   font-family: "Allerta Stencil", Sans-serif;
 }
 
-a{ 
-color:#ffffff; 
-background-color:black;
-} 
+.kaushan-portada {
+  font-family: "Kaushan Script", cursive;
+  font-size: 350%;
+  color: #000000;
+}
 
+
+#menu{
+	position:fixed;
+	width: 100%;
+	z-index: 11;
+}
+
+#imgportada{
+	width: 100%;
+	z-index: 1;
+}
+
+#datos{
+	background: url(../img/background.jpg) no-repeat;
+	alt:"una imagen";
+	background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    padding: 100px 0;
+    display:block;
+	z-index: 1;
+}
+
+#juegos{
+	background: url(../img/background2.jpg) no-repeat;
+	alt:"una imagen";
+	background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    padding: 100px 0;
+    display:block;
+	z-index: 1;
+}
+
+.social{
+	top: 40%;
+	width: 5%;
+	position: fixed; 
+	z-index: 10;
+
+}
+
+#img-soc{
+	width: 60px;
+	height: 60px;
+}
+
+
+.partmedia{	
+	margin-left: ;
+	text-align:center;
+
+	width: 100%;
+}
+
+a{
+	color: white;
+}
 a:hover{ 
 color:#336670; 
 } 
@@ -26,9 +92,12 @@ color:#336670;
 	font-size:1em;
 }
 
-.social{
-	width:1%;
-	position: fixed;
+.imgg{
+	width: 100%;
+}
+
+#mifoto{
+	width: 32.5%;
 }
 
 .pie{
@@ -40,8 +109,9 @@ color:#336670;
 }
 
 
-<!-- MANDO DE CONSOLA -->
+.ani-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
 
+<!-- MANDO DE CONSOLA -->
 #controller {
 	display: block;
 	position: absolute; 
@@ -71,7 +141,7 @@ color:#336670;
 	top: 50%;
 	left: 36.5%;
 	right: 36.5%;
-	bottom: 15%; 
+	bottom: 14%; 
 	border-bottom: 3px solid #222;
   background: #e8e8e9;  
 	z-index: 2;
@@ -217,3 +287,4 @@ background: #4183D7;
 #selectstart:after {  
 	transform: translateX(25%) rotate(-30deg);
 }
+<!-- fin de la imagen -->
