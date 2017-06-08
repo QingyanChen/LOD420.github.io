@@ -1,214 +1,261 @@
 @CHARSET "UTF-8";
 
-*{
-	margin:0px;
-	padding:0px;
+* {
+	margin: 0px;
+	padding: 0px;
 }
 
 .w3-kaushan {
-  font-family: "Kaushan Script", cursive;
-
+	font-family: "Kaushan Script", cursive;
 }
 
 .w3-allerta {
-  font-family: "Allerta Stencil", Sans-serif;
+	font-family: "Allerta Stencil", Sans-serif;
+	color: #ffffff;
 }
 
 .kaushan-portada {
-  font-family: "Kaushan Script", cursive;
-  font-size: 350%;
-  color: #000000;
+	font-family: "Kaushan Script", cursive;
+	font-size: 350%;
+	-webkit-text-fill-color: #ffffff;
+	-webkit-text-stroke: 3px black;
 }
 
+.kaushan-tour {
+	font-family: "Kaushan Script", cursive;
+	font-size: 350%;
+}
 
-#menu{
-	position:fixed;
+.permanent {
+	text-align: justify;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 130%;
+	color: #ffffff;
+	-webkit-text-fill-color: #ffffff;
+	-webkit-text-stroke: 1px black;
+}
+
+.cour {
+	font-family: 'Courgette', cursive;
+	text-align: justify;
+	font-size: 120%;
+}
+
+#menu {
+	position: fixed;
 	width: 100%;
 	z-index: 11;
 }
 
-#imgportada{
+#menu-tour {
+	position: fixed;
 	width: 100%;
+	z-index: 12;
+}
+
+#tour {
+	
+	width: 100%;
+	z-index: 11;
+}
+
+#imgportada {
+	background: no-repeat;
+	width: 100%;
+	background-attachment: fixed;
+	background-position:center;
 	z-index: 1;
 }
 
-#datos{
+#datos {
 	background: url(../img/background.jpg) no-repeat;
-	alt:"una imagen";
+	alt: "una imagen";
 	background-attachment: fixed;
-    background-position: center;
-    background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    padding: 100px 0;
-    display:block;
-	z-index: 1;
-}
-
-#juegos{
-	background: url(../img/background2.jpg) no-repeat;
-	alt:"una imagen";
-	background-attachment: fixed;
-    background-position: center;
-    background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    padding: 100px 0;
-    display:block;
-	z-index: 1;
-}
-
-.social{
-	top: 40%;
-	width: 5%;
-	position: fixed; 
-	z-index: 10;
-
-}
-
-#img-soc{
-	width: 60px;
-	height: 60px;
-}
-
-
-.partmedia{	
-	margin-left: ;
-	text-align:center;
-
-	width: 100%;
-}
-
-a{
-	color: white;
-}
-a:hover{ 
-color:#336670; 
-} 
-
-.zoom{
-	font-size:1em;
-}
-
-.imgg{
-	width: 100%;
-}
-
-#mifoto{
-	width: 32.5%;
-}
-
-.pie{
-	clear:both;
-	text-align:center;
-	padding: 20px;
-	background-color:white;
-	border-top:2px solid #999999;
-}
-
-
-.ani-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-
-<!-- MANDO DE CONSOLA -->
-#controller {
+	background-position: center;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	padding: 100px 0;
 	display: block;
-	position: absolute; 
+	z-index: 1;
+}
+
+#juegos {
+	background: url(../img/game_over.jpg) no-repeat;
+	alt: "una imagen";
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	padding: 100px 0;
+	display: block;
+	z-index: 1;
+}
+
+.social {
+	top: 75%;
+	width: 5%;
+	position: fixed;
+	z-index: 13;
+}
+
+.img-soc {
+	width: 35px;
+	height: 35px;
+}
+
+.tab-tour{
+display:none;	
+margin-left: 5%;
+}
+
+.tab{
+margin-left: 5%;	
+}
+
+.no-mostrar{
+	display: none;
+}
+
+
+
+a:hover {
+	color: #336670;
+}
+
+.zoom {
+	font-size: 1em;
+}
+
+.imgg {
+	width: 100%;
+}
+
+
+.pie {
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	background-color: white;
+	border-top: 2px solid #999999;
+}
+
+.ani-top {
+	position: relative;
+	animation: animatetop 0.4s
+}
+
+@
+keyframes animatetop {
+	from {top: -300px;
+	opacity: 0
+}
+
+to {
+	top: 0;
+	opacity: 1
+}
+
+}
+<!--
+MANDO DE CONSOLA -->#controller {
+	display: block;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0; 
+	bottom: 0;
 }
-     
+
 #controller:before {
 	content: '';
 	display: block;
-	position: absolute; 
+	position: absolute;
 	top: 0%;
 	left: 20%;
 	right: 20%;
-	bottom: 50%; 
+	bottom: 50%;
 	border-top: 3px solid #222;
 	background: #e8e8e9;
 	z-index: 2;
 }
-     
+
 #controller:after {
 	content: '';
 	display: block;
-	position: absolute; 
+	position: absolute;
 	top: 50%;
 	left: 36.5%;
 	right: 36.5%;
-	bottom: 14%; 
+	bottom: 14%;
 	border-bottom: 3px solid #222;
-  background: #e8e8e9;  
+	background: #e8e8e9;
 	z-index: 2;
 }
-     
+
 #leftCircle {
 	content: '';
 	display: block;
-	position: absolute; 
+	position: absolute;
 	top: 0%;
 	left: 0%;
 	right: 57%;
-	bottom: 0%; 
+	bottom: 0%;
 	border: 3px solid #222;
 	border-radius: 100%;
-	background: #e8e8e9; 
+	background: #e8e8e9;
 }
-     
+
 #rightCircle {
 	content: '';
 	display: block;
-	position: absolute; 
+	position: absolute;
 	top: 0%;
 	left: 57%;
 	right: 0%;
-	bottom: 0%; 
+	bottom: 0%;
 	border: 3px solid #222;
 	border-radius: 100%;
-	background: #e8e8e9; 
+	background: #e8e8e9;
 }
-     
-#leftCircle:after,     
-#rightCircle:after {
+
+#leftCircle:after, #rightCircle:after {
 	content: '';
 	display: block;
-	position: absolute; 
+	position: absolute;
 	top: 15%;
 	left: 15%;
 	right: 15%;
-	bottom: 15%; 
+	bottom: 15%;
 	border: 1px solid #bdc3c7;
 	border-radius: 100%;
 	z-index: 8;
 }
-      
+
 #rightCircle:after {
 	content: '';
 	display: block;
-	position: absolute; 
+	position: absolute;
 	top: 8%;
 	left: 8%;
 	right: 8%;
-	bottom: 8%;  
+	bottom: 8%;
 	border-radius: 100%;
-	background: #bdc3c7; 
+	background: #bdc3c7;
 }
 
-.x:after,
-.x:before {
+.x:after, .x:before {
 	background: #222;
 	content: '';
 	display: block;
-	position: absolute; 
-	top: 43%;
-	left: 27%;
-	right: 27%;
-	bottom: 43%;  
+	position: absolute;
+	top: 44.5%;
+	left: 34%;
+	right: 34%;
+	bottom: 44.5%;
 	border-radius: 5px;
 	z-index: 9;
 }
@@ -218,73 +265,105 @@ color:#336670;
 }
 
 .btn {
-	background: #e8e8e9; 
+	background: #e8e8e9;
 	display: block;
-	position: absolute; 
+	position: absolute;
 	top: 39%;
 	left: 25%;
 	right: 25%;
-	bottom: 39%;  
+	bottom: 39%;
 	transform: rotate(-30deg);
 	border-radius: 10px;
 	z-index: 9;
 }
 
-.btn:before { 
-background: #4183D7; 
+.btn:before {
+	background: #4183D7;
 	display: block;
-	position: absolute; 
+	position: absolute;
 	top: 15%;
 	left: 57%;
 	right: 12%;
-	bottom: 15%; 
-	border: 2px solid rgba(0,0,0,0.15);
+	bottom: 15%;
+	border: 2px solid rgba(0, 0, 0, 0.15);
 	border-radius: 100%;
 	z-index: 3;
 	content: '';
 }
 
 .btn:after {
-	background: #D64541; 
+	background: #D64541;
 	display: block;
-	position: absolute; 
+	position: absolute;
 	top: 15%;
 	left: 12%;
 	right: 57%;
-	bottom: 15%; 
-	border: 2px solid rgba(0,0,0,0.15); 
+	bottom: 15%;
+	border: 2px solid rgba(0, 0, 0, 0.15);
 	border-radius: 100%;
 	z-index: 3;
 	content: '';
 }
 
-#yx { transform: translateX(-20%) translateY(-50%) rotate(-30deg); }
-#ba { transform: translateX(20%) translateY(50%) rotate(-30deg); }
+#yx {
+	transform: translateX(-20%) translateY(-50%) rotate(-30deg);
+}
 
-#yx:before { background: #4183D7; }
-#yx:after { background: #26A65B; }
-#ba:before { background: #D64541; }
-#ba:after { background: #F4D03F; }
+#ba {
+	transform: translateX(20%) translateY(50%) rotate(-30deg);
+}
 
-#selectstart:before,
-#selectstart:after {
+#yx:before {
+	background: #4183D7;
+}
+
+#yx:after {
+	background: #26A65B;
+}
+
+#ba:before {
+	background: #D64541;
+}
+
+#ba:after {
+	background: #F4D03F;
+}
+
+#selectstart:before, #selectstart:after {
 	content: '';
 	display: block;
 	position: absolute;
-	background: #222; 
-	border-radius: 5px; 
+	background: #222;
+	border-radius: 5px;
 	top: 56%;
 	left: 46%;
 	right: 45%;
 	bottom: 37%;
 	z-index: 10;
 }
-  
-#selectstart:before {   
+
+#selectstart:before {
 	transform: translateX(-80%) rotate(-30deg);
-} 
- 
-#selectstart:after {  
+}
+
+#selectstart:after {
 	transform: translateX(25%) rotate(-30deg);
 }
-<!-- fin de la imagen -->
+<!--
+fin
+
+ 
+
+de
+
+ 
+
+la
+
+ 
+
+imagen
+
+ 
+
+-->

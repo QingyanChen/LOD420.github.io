@@ -14,274 +14,285 @@
 
 <!-- bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 
 <!-- icons -->
 <link rel="shortcut icon" href="img/logo.ico">
 <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
 <title>Turismo</title>
 </head>
+
 <body>
 
 	<header>
-		<div class="w3-container w3-padding-small w3-black">
-			<div class="w3-right"></div>
-		</div>
-	</header>
+		<!-- Menú -->
+		<nav id="menu-tour" class="navbar navbar-inverse w3-allerta w3-center">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#Navio1">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<button id="b7" class="w3-button navbar-brnad w3-bar-item">Turismo</button>
 
-	<div class="w3-container w3-green w3-center ani-top">
-		<h1 class="w3-kaushan">
-			<span class="icon-add_location"></span> Turismo
-		</h1>
-	</div>
+				</div>
 
-	<div class="w3-container w3-center">
+				<div class="collapse navbar-collapse  w3-allerta w3-center"
+					id="Navio1">
+					<button id="b8" class="w3-button w3-bar-item">Cajamarca</button>
+					<button id="b9" class="w3-button w3-bar-item">Baños del Inca</button>
+					<button id="b10" class="w3-button w3-bar-item">Collpa</button>
+					<button id="b11" class="w3-button w3-bar-item">Cumbe Mayo</button>
+					<ul class="nav navbar-nav navbar-right">
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
 
 		<div class="social">
 			<a href="https://www.facebook.com" target="blank"><img
 				src="img/fb.png" alt="facebook"></a> <a
 				href="https://www.tiwtter.com" target="blank"><img
 				src="img/ttw.png" alt="tiwtter"></a>
-
-		</div>
-		<div class="w3-bar w3-black">
-			<button class="w3-bar-item w3-button tablink w3-green"
-				onclick="openLugares(event,'Baños del Inca')">
-				<span class="icon-hot_tub"></span> Baños del Inca
-			</button>
-			<button class="w3-bar-item w3-button tablink"
-				onclick="openLugares(event,'Cumbe Mayo')">
-				<span class="icon-panorama"></span> Cumbe Mayo
-			</button>
-			<button class="w3-bar-item w3-button tablink"
-				onclick="openLugares(event,'Otuzco')">
-				<span class="icon-apps"></span> Otuzco
-			</button>
-		</div>
-
-		<div id="Baños del Inca"
-			class="w3-container w3-border lugares w3-kaushan">
-			<h2>
-				<span class="icon-hot_tub"></span> Baños del Inca
-			</h2>
-			<p style="text-align: justify">A 15 minutos de Cajamarca se
-				encuentra Baños del Inca, un distrito que ofrece excelentes
-				servicios del termalismo medicinal, combinando modernismo con
-				cultura incaica, pero, sobre todo, salud de calidad. Sumergirse en
-				las aguas termales, especialmente en la famosa Poza del Inca, que
-				mide cuatro metros de largo por cuatro de ancho y tiene una
-				profundidad de un metro con setenta centímetros, es francamente
-				delicioso. Según la tradición, el inca Atahualpa tenía la costumbre
-				de relajarse en sus aguas, para recuperar fuerzas antes de emprender
-				nuevas jornadas de conquista.</p>
-
-
-			<div class="container w3-row">
-
-				<div class="w3-third">
-					<p></p>
-				</div>
-				<div id="myCarousel" class="carousel slide w3-third"
-					data-ride="carousel">
-					<h4>
-						<span class="icon-camera"></span> FOTOS
-					</h4>
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
-
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="img/BañosInca.jpg" alt="Baños del Inca"
-								style="width: 100%;">
-						</div>
-
-						<div class="item">
-							<img src="img/BañosInca2.jpg" alt="Baños del Inca"
-								style="width: 100%;">
-						</div>
-
-						<div class="item">
-							<img src="img/BañosInca3.jpg" alt="Baños del Inca"
-								style="width: 100%;">
-						</div>
-					</div>
-
-					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel"
-						data-slide="prev"> <span
-						class="glyphicon glyphicon-chevron-left"></span> <span
-						class="sr-only">Previous</span>
-					</a> <a class="right carousel-control" href="#myCarousel"
-						data-slide="next"> <span
-						class="glyphicon glyphicon-chevron-right"></span> <span
-						class="sr-only">Next</span>
-					</a>
-				</div>
-				<div class="w3-third">
-					<p></p>
-				</div>
+			<div class="w3-row w3-transparent">
+				<br>
 			</div>
+		</div>
 
+		<div class="w3-container w3-white">
+			<br>
+		</div>
+	</header>
+	<br>
+
+	<div id="tour"
+		class="w3-display-container w3-row w3-center city">
+		<img src="img/turismo.jpg" alt="escápate_de_la_rutina" class="imgg">
+		<div class="w3-display-topmiddle w3-large">
+			<h1 class="kaushan-tour w3-center">Escápate de la rutina!!</h1>
+		</div>
+	</div>
+
+
+	<div id="cajamarca"
+		class="tab-tour w3-display-container w3-border w3-kaushan city cour">
+		<div class="w3-container w3-half w3-border">
+			<h2 class="w3-center">Cajamarca</h2>
+			<br>
+			<p>Ubicación: Sierra norte del Perú, frontera con Ecuador.</p>
+			<br>
+			<p class="cour">Extensión: 33.318 Km².</p>
+			<br>
+			<p class="cour">Cajamarca, fundada como «San Antonio de
+				Cajamarca», es la ciudad más importante de la sierra norte del Perú,
+				capital de la provincia y del departamento de Cajamarca. Está
+				situada a 2750 msnm en la margen este de la cadena oriental de la
+				Cordillera de los Andes, en el valle interandino que forman los ríos
+				Mashcon y Chonta.</p>
+			<br>
+			<p class="cour">Escenario de los últimos latidos del Imperio Incaico. Noble
+				corazón andino de seductores paisajes poblados del mejor ganado
+				vacuno del Perú y una envidiable producción láctea.</p>
+			<br>
+			<p class="cour">Acogedora ciudad de magnífica arquitectura
+				colonial y tierra de historia con lugares como los Baños del Inca,
+				las Ventanillas de Otuzco y Cumbemayo. Destino de naturaleza
+				bucólica como la Ex-hacienda La Colpa y la Granja Porcón. Pueblo
+				colorido, que cada año, en febrero y marzo, se empapa de carnavales.
+			</p>
 
 		</div>
 
-		<div id="Cumbe Mayo" class="w3-container w3-border lugares w3-kaushan"
-			style="display: none">
-			<h2>
-				<span class="icon-panorama"></span> Cumbe Mayo
-			</h2>
-			<p style="text-align: justify">Esta ubicado 20 Km. al suroeste de
-				Cajamarca y a una altitud de 3500 metros sobre el nivel del mar. Se
-				trata de una zona arqueológica rodeada de un pintoresco paisaje que
-				alberga numerosas formaciones geológicas en forma de bosque de
-				piedras o farallones, siendo las formas más conocidas las que
-				semejan siluetas de frailes en silenciosa procesión, razón por la
-				cual estas formaciones rocosas han adquirido el apelativo de
-				“fraylones”.</p>
+		<div class="w3-container w3-half">
 
-			<div class="container w3-row">
-
-				<div class="w3-third">
-					<p></p>
-				</div>
-				<div id="myCarousel1" class="carousel slide w3-third"
-					data-ride="carousel">
-					<h4>
-						<span class="icon-camera"></span> FOTOS
-					</h4>
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel1" data-slide-to="1"></li>
-						<li data-target="#myCarousel1" data-slide-to="2"></li>
-					</ol>
-
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="img/CumbeMayo.jpeg" alt="CUMBE MAYO"
-								style="width: 100%;">
-						</div>
-
-						<div class="item">
-							<img src="img/CumbeMayo1.jpeg" alt="CUMBE MAYO"
-								style="width: 100%;">
-						</div>
-
-						<div class="item">
-							<img src="img/CumbeMayo2.jpeg" alt="CUMBE MAYO"
-								style="width: 100%;">
-						</div>
-					</div>
-
-					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel1"
-						data-slide="prev"> <span
-						class="glyphicon glyphicon-chevron-left"></span> <span
-						class="sr-only">Previous</span>
-					</a> <a class="right carousel-control" href="#myCarousel1"
-						data-slide="next"> <span
-						class="glyphicon glyphicon-chevron-right"></span> <span
-						class="sr-only">Next</span>
-					</a>
-				</div>
-				<div class="w3-third">
-					<p></p>
-				</div>
+			<div class="col-sm-12 col-xs-12">
+				<img src="img/Plaza-Cajamarca.jpg" alt="Plaza de Cajamarca"
+					class="imgg"> <br> <br>
 			</div>
-
-		</div>
-
-		<div id="Otuzco" class="w3-container w3-border lugares w3-kaushan"
-			style="display: none">
-			<h2>
-				<span class="icon-apps"></span> Otuzco
-			</h2>
-			<p style="text-align: justify">En Cajamarca existió
-				una forma de sepultar a los muertos que consistía en excavar nichos
-				en roca y colocar a los difuntos allí, haciendo uso de lo alto de
-				los barrancos, a ese enigmático lugar popularmente se le denominó
-				Ventanillas de Otuzco. Situado en el distrito de Baños del Inca
-				a 8 km al noroeste de la ciudad de Cajamarca. El sitio se localiza sobre roca volcánica.
-				Tiene un área de 4 mil metros.</p>
-
-
-			<div class="container w3-row">
-
-				<div class="w3-third">
-					<p></p>
-				</div>
-				<div id="myCarousel2" class="carousel slide w3-third"
-					data-ride="carousel">
-					<h4>
-						<span class="icon-camera"></span> FOTOS
-					</h4>
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel2" data-slide-to="1"></li>
-						<li data-target="#myCarousel2" data-slide-to="2"></li>
-					</ol>
-
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="img/Otuzco0.jpg" alt="OTUZCO" style="width: 100%;">
-						</div>
-
-						<div class="item">
-							<img src="img/Otuzco01.jpg" alt="OTUZCO" style="width: 100%;">
-						</div>
-
-						<div class="item">
-							<img src="img/Otuzco02.jpg" alt="OTUZCO" style="width: 100%;">
-						</div>
-					</div>
-
-					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel2"
-						data-slide="prev"> <span
-						class="glyphicon glyphicon-chevron-left"></span> <span
-						class="sr-only">Previous</span>
-					</a> <a class="right carousel-control" href="#myCarousel2"
-						data-slide="next"> <span
-						class="glyphicon glyphicon-chevron-right"></span> <span
-						class="sr-only">Next</span>
-					</a>
-				</div>
-				<div class="w3-third">
-					<p></p>
-				</div>
+			<br> <br>
+			<div class="col-sm-12 col-xs-12">
+				<img src="img/Carnaval.jpg" alt="Carnaval de Cajamarca" class="imgg">
+				<br> <br>
 			</div>
+			<br>
 
 		</div>
 	</div>
+
+	<div id="inca"
+		class="tab-tour w3-display-container w3-border w3-kaushan city">
+		<div class="w3-container w3-half w3-border">
+			<h2 class="w3-center">Baños del Inca</h2>
+			<br>
+			<p class="cour">Extensión: 276.4 km²</p>
+			<br>
+			<p class="cour">El balneario de aguas termales está ubicado a 6
+				kilómetros de Cajamarca con temperaturas que llegan hasta los 79ºC.
+				Por el confort de su establecimientos y propiedad curativas de sus
+				fuentes son considerados como los más importantes del continente,
+				tanto por la bondad de sus aguas, como por el trasfondo histórico
+				que representan, pues allí se aseaba y relajaba tanto Pachacútec a
+				su paso conquistador, como Túpac Yupanqui y sus hijos Huáscar y
+				Atahualpa; siendo este último el anfitrión de Francisco Pizarro
+				cuando fue conquistada Cajamarca en el año 1532.</p>
+			<br>
+			<p class="cour">Los famosos "Perolitos" se encuentran separados
+				en grupos, los que se encuentran en el moderno Complejo Turístico de
+				Baños del Inca, que presta servicios tanto para turistas extranjeros
+				como nacionales.</p>
+			<br>
+			<p class="cour">Además cuenta con diversos atractivos
+				arqueológicos como las pinturas Rupestres de Callaqpuma a 2 km de
+				Baños del Inca, en la carretera hacia el distrito de Llacanora, el
+				cual tiene más de 3000 años de antigüedad, evidenciándose
+				representaciones antropomorfas de actividades cotidianas del
+				habitante norandino.</p>
+			<br>
+			<p class="cour">El distrito de Baños del Inca cuenta con
+				infraestructura hotelera de primera línea, la más amplia y
+				desarrollada del departamento de Cajamarca, contando con Hoteles de
+				hasta 5 estrellas como el Hotel Laguna Seca y el Hotel Las Lomas.</p>
+			<br>
+			<p class="cour">La calidad de vida de sus pobladores y el índice
+				de desarrollo humano logrado por este distrito es muy superior al de
+				otras ciudades de la región como Jaén y Chota, siendo solamente
+				superado por Cajamarca.</p>
+			<br>
+			<p class="cour">Recientemente fue elegido como la primera
+				maravilla del Perú en un concurso llevado a cabo por cerca de 35
+				millones de votantes a nivel nacional e internacional. Es
+				considerado como "El SPA de América Latina".</p>
+			<br>
+		</div>
+
+		<div class="w3-container w3-half">
+
+			<div class="col-sm-12 col-xs-12">
+				<img src="img/Plaza-Cajamarca.jpg" alt="Plaza de Cajamarca"
+					class="imgg"> <br> <br>
+			</div>
+			<br> <br>
+			<div class="col-sm-12 col-xs-12">
+				<img src="img/Carnaval.jpg" alt="Carnaval de Cajamarca" class="imgg">
+				<br> <br>
+			</div>
+			<br>
+
+		</div>
+	</div>
+
+	<div id="collpa"
+		class="tab-tour w3-display-container w3-border w3-kaushan city">
+		<div class="w3-container w3-half w3-border">
+			<h2 class="w3-center">Collpa</h2>
+			<br>
+			<p class="cour">Ex hacienda ubicada a 11 km. De la ciudad de
+				Cajamarca, dedicada a la crianza de ganado vacuno y lanar, presenta
+				un entorno paisajista de áreas verdes y algunas laderas
+				reforestadas. A pocos metros de las instalaciones de la Ex casa
+				hacienda, se encuentra la Capilla, los talleres y los ambientes para
+				el ordeño, tambien podemos observar una laguna artificial
+				ornamentada con pequeños puentes y rodeada de jardines. Actualmente
+				son cientos de turistas que visitan esta hermosa hacienda .</p>
+			<br>
+			<p class="cour">Este lugar se caracteriza por el llamado de vacas
+				por su nombre para ser ordeñadas, cuenta la tradición que el dueño
+				de la hacienda comenzo a llamar a una vaca en particualar con el
+				nombre de su esposa como quien bromeaba, tanto y tanto fue llamando
+				a la vaca que esta comenzo hacerle caso y asi comenzo a llamar a
+				todas las vacas por su nombre, hoy en dia no se a perdido la
+				tradición y hace de esta hacienda la unica en el pais donde llaman a
+				las vacas por su nombre.</p>
+			<br>
+			<p class="cour">Es una de las exhaciendas mas reconocidas de la
+				campiña que mantiene su antigua casona. En la hacienda se ofrecen
+				productos de muy buena calidad, entre estos tenemos quesos,
+				manjarblanco, yogurt natural, ceramicos, vestimentas tipicas.</p>
+			<br>
+			<p class="cour"></p>
+			<br>
+			<p class="cour"></p>
+			<br>
+			<p class="cour"></p>
+			<br>
+		</div>
+
+		<div class="w3-container w3-half">
+
+			<div class="col-sm-12 col-xs-12">
+				<img src="img/Plaza-Cajamarca.jpg" alt="Plaza de Cajamarca"
+					class="imgg"> <br> <br>
+			</div>
+			<br> <br>
+			<div class="col-sm-12 col-xs-12">
+				<img src="img/Carnaval.jpg" alt="Carnaval de Cajamarca" class="imgg">
+				<br> <br>
+			</div>
+			<br>
+
+		</div>
+	</div>
+
+
+	<div id="cumbe"
+		class="tab-tour w3-display-container w3-border w3-kaushan city">
+		<div class="w3-container w3-half w3-border">
+			<h2 class="w3-center">Cumbe Mayo</h2>
+			<br>
+			<p class="cour">Cumbe Mayo esta Ubicado a 20 Km. al suroeste de
+				la ciudad de Cajamarca a 45 minutos en auto aproximadamente.</p>
+			<br>
+			<p class="cour">Cumbe Mayo está rodeado por un fantástico bosque
+				de piedras que parece reproducir la silueta de piadosos frailes por
+				lo que familiarmente se les denomina "frailones”.</p>
+			<br>
+			<p class="cour">Cumbe Mayo es considerado como una de las más
+				notables obras de ingeniería hidráulica de América Precolombina
+				hecha por la cultura Cajamarca.</p>
+			<br>
+			<p class="cour">Construida aproximadamente 1000 años antes de
+				Cristo y que hasta el día de hoy se mantienen intacta. Fue
+				construida a tajo abierto en roca viva. En la Antigüedad servia para
+				trasladar las aguas que tenían como destino natural la cuenca del
+				Pacífico, hacia la cuenca del Atlántico.</p>
+			<br>
+			<p class="cour">El denominado Santuario, farallón con apariencia
+				de una gigantesca cabeza humana y Las Cuevas, en las que existen
+				grabados; este lugar para algunos investigadores, habría sido usado
+				para realizar sacrificios.</p>
+			<br>
+			<p class="cour"></p>
+			<br>
+		</div>
+
+		<div class="w3-container w3-half">
+
+			<div class="col-sm-12 col-xs-12">
+				<img src="img/Plaza-Cajamarca.jpg" alt="Plaza de Cajamarca"
+					class="imgg"> <br> <br>
+			</div>
+			<br> <br>
+			<div class="col-sm-12 col-xs-12">
+				<img src="img/Carnaval.jpg" alt="Carnaval de Cajamarca" class="imgg">
+				<br> <br>
+			</div>
+			<br>
+
+		</div>
+	</div>
+
 	<footer class="pie">
 		<h5 class="w3-kaushan">
 			<strong>Derechos Reservados &copy;</strong>
 		</h5>
 	</footer>
-	<script>
-		function openLugares(evt, lugaresName) {
-			var i, x, tablinks;
-			x = document.getElementsByClassName("lugares");
-			for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}
-			tablinks = document.getElementsByClassName("tablink");
-			for (i = 0; i < x.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(
-						" w3-green", "");
-			}
-			document.getElementById(lugaresName).style.display = "block";
-			evt.currentTarget.className += " w3-green";
-		}
-	</script>
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/myjs.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
