@@ -54,7 +54,6 @@
 }
 
 #tour {
-	
 	width: 100%;
 	z-index: 11;
 }
@@ -63,7 +62,7 @@
 	background: no-repeat;
 	width: 100%;
 	background-attachment: fixed;
-	background-position:center;
+	background-position: center;
 	z-index: 1;
 }
 
@@ -95,6 +94,20 @@
 	z-index: 1;
 }
 
+#tour-back{
+	background: url(../img/exploor.jpg) no-repeat;
+	alt: "una imagen";
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	padding: 100px 0;
+	display: block;
+	z-index: 1;
+}
+
 .social {
 	top: 75%;
 	width: 5%;
@@ -107,20 +120,19 @@
 	height: 35px;
 }
 
-.tab-tour{
-display:none;	
-margin-left: 5%;
+.tab-tour {
+	display: none;
+	margin-left: 5%;
 }
 
-.tab{
-margin-left: 5%;	
+.tab {
+	margin-left: 5%;
+	
 }
 
-.no-mostrar{
+.no-mostrar {
 	display: none;
 }
-
-
 
 a:hover {
 	color: #336670;
@@ -133,7 +145,6 @@ a:hover {
 .imgg {
 	width: 100%;
 }
-
 
 .pie {
 	clear: both;
@@ -352,18 +363,22 @@ MANDO DE CONSOLA -->#controller {
 <!--
 fin
 
+
  
+
 
 de
 
+
  
+
 
 la
-
  
-
 imagen
 
+
  
+
 
 -->

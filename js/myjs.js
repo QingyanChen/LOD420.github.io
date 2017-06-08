@@ -25,21 +25,8 @@ function pageLoad(){
 		var f = document.getElementById("b6");
 		f.onclick= fClick;
 	
-		//botones - navegación - turismo
-		var g = document.getElementById("b7"); 
-		g.onclick = gClick;	
-
-		var h = document.getElementById("b8"); 
-		h.onclick = hClick;
-
-		var i = document.getElementById("b9"); 
-		i.onclick = iClick;
-
-		var j = document.getElementById("b10"); 
-		j.onclick = jClick;
-
-		var k = document.getElementById("b11"); 
-		k.onclick = kClick;
+		
+		
 }
 
 var slideIndex = 1;
@@ -78,6 +65,8 @@ function eClick(){
 function fClick(){
 	showDivs3(slideIndex3 += 1);
 }
+
+
 
 
 //1er slide index
@@ -131,6 +120,7 @@ function showDivs3(n) {
 }
 
 
+
 //turismo nav
 function gClick(){
 	openCity('tour');
@@ -141,11 +131,11 @@ function hClick(){
 }
 
 function iClick(){
-	openCity(inca);
+	openCity('inca');
 }
 
 function jClick(){
-	openCity("collpa");
+	openCity('collpa');
 }
 
 function kClick(){
@@ -166,10 +156,3 @@ function openCity(cityName) {
 window.onload = pageLoad;
 
 })();
-
-
-
-
-
-
-		
